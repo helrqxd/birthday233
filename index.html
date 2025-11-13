@@ -21,8 +21,7 @@
     <meta property="og:image" content="favicon.ico"/>
     <meta property="og:description" content="Wish you a very Happy Birthday">
     <!-- End of Facebook Meta Tags -->
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
@@ -35,8 +34,32 @@
 </head>
 
 <body>
+<div class="castle-container">
+    <img src="imgs/castle.png" id="castle-image" alt="castle">
+    <div id="goahead-container" class="col-md-6 text-center col-md-offset-3" style="position: fixed; bottom: 20px; left: 0; right: 0; z-index: 10001;">
+        <button class="btn btn-primary" id="goahead">Go Ahead</button>
+    </div>
+</div>
+<div id="choice-container" style="display: none;">
+    <button class="btn btn-primary choice-btn">我是来吃饭的</button>
+    <button class="btn btn-primary choice-btn">我是来实现愿望的</button>
+    <button class="btn btn-primary choice-btn">我是来获得快乐的</button>
+    <button class="btn btn-primary choice-btn">你管我来干啥不许堵门！</button>
+</div>
 <div class="loading"></div>
-<audio class="song" controls loop>
+<audio id="shui-audio">
+    <source src="assets/shui.mp3" type="audio/mpeg">
+</audio>
+<audio id="gzqs-audio">
+    <source src="assets/gzqs.mp3" type="audio/mpeg">
+</audio>
+<audio id="fcl-audio">
+    <source src="assets/fcl.mp3" type="audio/mpeg">
+</audio>
+<audio id="hdl-audio">
+    <source src="assets/hdl.mp3" type="audio/mpeg">
+</audio>
+<audio class="song" id="hbd-audio">
     <source src="assets/hbd.mp3"></source>
     Your browser isn't invited for super fun audio time.
 </audio>
@@ -113,6 +136,27 @@
     <div class="row message">
         <div class="col-md-12" id="texts-container">
         </div>
+    </div>
+    <div id="caidan-container" style="display: none; text-align: center; margin-top: 20px;">
+        <button class="btn btn-primary" id="caidan_button">咦？怎么还有个按钮？</button>
+    </div>
+    <div id="light-choice-container" style="display: none;">
+        <button class="btn btn-primary light-choice-btn">红色灯</button>
+        <button class="btn btn-primary light-choice-btn">黄色灯</button>
+        <button class="btn btn-primary light-choice-btn">绿色灯</button>
+        <button class="btn btn-primary light-choice-btn">其实选项没有什么用已经设置好了</button>
+    </div>
+    <div id="music-choice-container" style="display: none;">
+        <button class="btn btn-primary music-choice-btn">恋个爱</button>
+        <button class="btn btn-primary music-choice-btn">许个愿</button>
+        <button class="btn btn-primary music-choice-btn">纯过个生日</button>
+        <button class="btn btn-primary music-choice-btn">拆个炸弹盒</button>
+    </div>
+    <div id="balloons-choice-container" style="display: none;">
+        <button class="btn btn-primary balloons-choice-btn">一排气球</button>
+        <button class="btn btn-primary balloons-choice-btn">一把气球</button>
+        <button class="btn btn-primary balloons-choice-btn">一堆气球</button>
+        <button class="btn btn-primary balloons-choice-btn">很多很多气球</button>
     </div>
     <div class="navbar navbar-fixed-bottom">
         <div class="row">
